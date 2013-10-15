@@ -42,15 +42,18 @@
             var localstring = window.localStorage.getItem("phone_number");
            
             
-            function Mars("energy","protein","carbohydrate"){
+            function marsObj(energy,protein,carbohydrate){
                 this.energy = energy;
                 this.protein = protein;
                 this.carbohydrate = carbohydrate;
             }
-            var mars = new Mars('1888','4.3','68.9');
-            window.localStorage.setItem("mars", JSON.stringify(mars));
+            
+            
+            var marsBar = new marsObj('1888','4.3','68.9');
+            window.localStorage.setItem("mars", JSON.stringify(marsBar));
             var retrieved_mars = JSON.parse(window.localStorage.getItem("mars"));
             alert(retrieved_mars);
+            
             
         </script>
     </body>
