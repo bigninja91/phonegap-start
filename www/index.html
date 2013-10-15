@@ -40,7 +40,18 @@
             
              window.localStorage.setItem("phone_number","01905111000");
             var localstring = window.localStorage.getItem("phone_number");
-            alert(localstring);
+           
+            
+            function Mars("energy","protein","carbohydrate"){
+                this.energy = energy;
+                this.protein = protein;
+                this.carbohydrate = carbohydrate;
+            }
+            var mars = new Mars('1888','4.3','68.9');
+            window.localStorage.setItem("mars", JSON.stringify(mars));
+            var retrieved_mars = JSON.parse(window.localStorage.getItem("mars"));
+            alert(retrieved_mars);
+            
         </script>
     </body>
 </html>
