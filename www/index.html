@@ -52,7 +52,7 @@
             var marsBar = new marsObj('1888','4.3','68.9');
             window.localStorage.setItem("mars", JSON.stringify(marsBar));
             var retrieved_mars = JSON.parse(window.localStorage.getItem("mars"));
-            alert(retrieved_mars);
+            alert(retrieved_mars.energy);
             
             
         </script>
